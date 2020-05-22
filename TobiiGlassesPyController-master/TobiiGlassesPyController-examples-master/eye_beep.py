@@ -49,13 +49,18 @@ def main():
 
 	for i in range(tt):
 		time.sleep(1.0)
-		print("Head unit: %s" % tobiiglasses.get_data()['mems'])
-		print("Left Eye: %s " % tobiiglasses.get_data()['left_eye'])
-		print("Right Eye: %s " % tobiiglasses.get_data()['right_eye'])
-		print("Gaze Position: %s " % tobiiglasses.get_data()['gp'])
+# 		print("Head unit: %s" % tobiiglasses.get_data()['mems'])
+# 		print("Left Eye: %s " % tobiiglasses.get_data()['left_eye'])
+# 		print("Right Eye: %s " % tobiiglasses.get_data()['right_eye'])
+# 		print("Gaze Position: %s " % tobiiglasses.get_data()['gp'])
 
 		x_pos = tobiiglasses.get_data()['gp']['gp'][0]
 		y_pos = tobiiglasses.get_data()['gp']['gp'][1]
+		
+		print("Test number " + i)
+		print("X Position: " + x_pos)
+		print("Y Position: " + y_pos)
+		
 
 		#if out of bounds in the x axis
 		if (x_pos > x_upper or x_pos < x_lower):
