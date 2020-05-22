@@ -28,17 +28,17 @@ def main():
 
 	#Get the bounds of the viewable range
 	print("Enter x upperbound:")
-	x_upper = int(input())
+	x_upper = float(input())
 
 	print("Enter x lowerbound:")
-	x_lower = int(input())
+	x_lower = float(input())
 
 
 	print("Enter y upperbound:")
-	y_upper = int(input())
+	y_upper = float(input())
 
 	print("Enter y lowerbound:")
-	y_lower = int(input())
+	y_lower = float(input())
 	
 	print("Enter time to run in seconds:")
 	tt = int(input())
