@@ -40,7 +40,7 @@ def main():
 	print("Enter y lowerbound:")
 	y_lower = int(input())
 	
-	print("Enter time to run:")
+	print("Enter time to run in seconds:")
 	tt = int(input())
 
 	tobiiglasses.start_streaming()
