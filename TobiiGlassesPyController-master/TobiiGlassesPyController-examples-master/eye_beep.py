@@ -39,14 +39,15 @@ def main():
 
 	print("Enter y lowerbound:")
 	y_lower = int(input())
-
-
+	
+	print("Enter time to run:")
+	tt = int(input())
 
 	tobiiglasses.start_streaming()
 	print("Please wait ...")
 	time.sleep(3.0)
 
-	for i in range(1000):
+	for i in range(tt):
 		time.sleep(1.0)
 		print("Head unit: %s" % tobiiglasses.get_data()['mems'])
 		print("Left Eye: %s " % tobiiglasses.get_data()['left_eye'])
