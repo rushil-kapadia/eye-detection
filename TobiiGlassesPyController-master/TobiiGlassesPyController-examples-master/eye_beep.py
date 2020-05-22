@@ -47,6 +47,7 @@ def main():
 	time.sleep(3.0)
 
 	for i in range(1000):
+		time.sleep(1.0)
 		print("Head unit: %s" % tobiiglasses.get_data()['mems'])
 		print("Left Eye: %s " % tobiiglasses.get_data()['left_eye'])
 		print("Right Eye: %s " % tobiiglasses.get_data()['right_eye'])
