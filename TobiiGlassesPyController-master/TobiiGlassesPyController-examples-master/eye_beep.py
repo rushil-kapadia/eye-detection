@@ -57,9 +57,9 @@ def main():
 		x_pos = tobiiglasses.get_data()['gp']['gp'][0]
 		y_pos = tobiiglasses.get_data()['gp']['gp'][1]
 		
-		print("Test number " + i)
-		print("X Position: " + x_pos)
-		print("Y Position: " + y_pos)
+		print("Test number %s " % i)
+		print("X Position: %s " % x_pos)
+		print("Y Position: %s " % y_pos)
 		
 
 		#if out of bounds in the x axis
